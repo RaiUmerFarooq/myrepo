@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: python main.py
-test:
+  test:
     docker:
       - image: circleci/python:3.8
     steps:
@@ -19,5 +19,5 @@ workflows:
     jobs:
      - build
      - test:
-     requires:
-      - build
+       requires:
+         - build
