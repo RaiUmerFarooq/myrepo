@@ -6,7 +6,7 @@ jobs:
       — image: cimg/python:latest
     steps:
       — checkout
-      — run: python main.py
+      — run: python3 main.py
 
 workflows:
   build_now:
