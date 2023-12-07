@@ -13,6 +13,11 @@ jobs:
     steps:
       - checkout
       - run: python main.py
+  deploy:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+       run: echo "Deploying to production server"
 
 workflows:
   version: 2
@@ -22,3 +27,9 @@ workflows:
       - test:
           requires:
             - build
+      - deploy:
+          requires:
+            - test
+          filters:
+             branches:
+               only: main
