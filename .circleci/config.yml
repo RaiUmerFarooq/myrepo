@@ -6,10 +6,11 @@ jobs:
         — image: cimg/python:3.11
 
      steps:
-      - checkout
+       — checkout
         — run: python main.py
 
         workflow:
         build_now:
         jobs:
-          - build
+          —  build
+        
