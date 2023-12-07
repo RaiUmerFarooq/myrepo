@@ -10,5 +10,6 @@ jobs:
         — run: python main. py
 
         workflow:
+        built_now:
         jobs:
           - built
