@@ -8,8 +8,8 @@ jobs:
        — checkout
         — run: python main.py
 
-workflow:
+workflows:
   build_now:
          jobs:
-         —  build
+         — build
         
