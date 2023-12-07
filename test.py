@@ -7,6 +7,10 @@ class TestRectangleCalculator(unittest.TestCase):
         result = calculate_rectangle_properties(5, 3)
         self.assertEqual(result, (15, 16))
 
+        # Test with the values from the main function
+        result = calculate_rectangle_properties(12, 13)
+        self.assertEqual(result, (156, 50))
+
         # Test with floating-point numbers
         result = calculate_rectangle_properties(2.5, 4.5)
         self.assertEqual(result, (11.25, 14))
