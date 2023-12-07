@@ -4,13 +4,12 @@ jobs:
     build:
       docker:
         — image: cimg/python:3.11
-
      steps:
        — checkout
         — run: python main.py
 
-        workflow:
-        build_now:
-        jobs:
-          —  build
+workflow:
+  build_now:
+         jobs:
+         —  build
         
