@@ -126,3 +126,6 @@ function cong(){
 // canvas.height = H;
 // Draw();
 }
+function next1(){
+  window.location("bhool.html")
+}
