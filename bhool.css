@@ -52,3 +52,13 @@ section {
 .game--restart:hover {
     background-color: #1ed86c;
 }
+
+.next{
+    display: none;
+    border-color:rgb(228, 228, 228) ;
+    box-shadow: none;
+    border: 0.5px solid rgb(177, 176, 176);
+}
+.next:hover{
+    cursor: pointer;
+}

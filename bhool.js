@@ -50,6 +50,7 @@ function handleResultValidation() {
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
+        next1();
         return;
     }
 
@@ -78,11 +79,24 @@ function handleCellClick(clickedCellEvent) {
 }
 
 function handleRestartGame() {
+    const bt=document.getElementById("next");
+    bt.style.display="none";
     gameActive = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+}
+
+function next1(){
+    if(statusDisplay.innerHTML==="Player X has won!"){
+        console.log("compared")
+        const bt=document.getElementById("next");
+    bt.style.display="inline-block";
+    }
+}
+function next(){
+    location.href="final.html"
 }
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
