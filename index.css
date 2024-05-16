@@ -1,0 +1,106 @@
+/* body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+  
+  }
+  canvas{display:block}
+  h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 5em;
+    font-weight: 300;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .text{
+text-align: center;
+
+
+  } */
+
+  body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+  }
+  
+  canvas {
+    display: block;
+    width: 100%; /* Ensure canvas takes full width of the viewport */
+    height: 100vh; /* Set canvas height to full viewport height */
+  }
+  
+  h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 3em; /* Adjust font size for smaller screens */
+    font-weight: 300;
+    -webkit-user-select: none;
+    user-select: none;
+    text-align: center; /* Center align text */
+    width: 80%; /* Limit width to 80% of viewport */
+    max-width: 400px; /* Limit maximum width for better readability */
+  }
+  
+  .text {
+    text-align: center;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+    font-weight: 300;
+    padding: 20px;
+  }
+  .heart{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    float: left;
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: #fc2e5a;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+.heart{
+    top: 60%;
+    left: 35%;
+}
